@@ -38,8 +38,8 @@ async fn main() {
         "assets/sprite.png",
         100.0,  // width
         200.0,  // height
-        200.0,  // x position
-        60.0,   // y position
+        600.0,  // x position
+        500.0,   // y position
         true,   // Enable stretching
         1.0,    // Normal zoom (100%)
     ).await;
@@ -48,7 +48,7 @@ async fn main() {
         list_view.draw();
         if let Some(selected) = list_view.selected_item() {
             match selected.as_str() {
-                "Show Cool Bird" => {
+                "sprite" => {
                     // Call the draw method built directly into your StillImage struct
                     img_bird.draw();
                 }_ => {}
